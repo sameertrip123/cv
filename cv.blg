@@ -1,9 +1,0 @@
-[0] Config.pm:307> INFO - This is Biber 2.19
-[0] Config.pm:310> INFO - Logfile is 'cv.blg'
-[63] biber-darwin:340> INFO - === Sat May 25, 2024, 08:22:30
-[78] Biber.pm:419> INFO - Reading 'cv.bcf'
-[152] Biber.pm:979> INFO - Found 0 citekeys in bib section 0
-[165] bbl.pm:660> INFO - Writing 'cv.bbl' with encoding 'UTF-8'
-[165] bbl.pm:763> INFO - Output to cv.bbl
-[166] Biber.pm:131> WARN - The file 'cv.bcf' does not contain any citations!
-[166] Biber.pm:133> INFO - WARNINGS: 1
