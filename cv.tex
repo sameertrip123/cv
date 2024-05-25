@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -91,6 +91,7 @@
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
 
+
 %for social icons
 \usepackage{fontawesome5}
 
@@ -114,7 +115,7 @@
     \textbf{#1} & \hfill &  #2 \\[3.75pt]
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt,label=--]
     }
     {
     \end{itemize}
@@ -142,12 +143,12 @@
 % \end{tabularx}
 
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Nmme Tripathi} \\[7.5pt]
+\Huge{Sameer Tripathi} \\[7.5pt]
+\href{tel:+919151426933}{\raisebox{-0.05\height}\faMobile \ +91 9151426933} \ $|$ \
+\href{mailto:sameertrip123@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ sameertrip123@gmail.com} \ $|$ \
 \href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
 \href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \\
 \end{tabularx}
 
 %----------------------------------------------------------------------------------------
@@ -155,63 +156,126 @@
 %----------------------------------------------------------------------------------------
 
 %Interests/ Keywords/ Summary
-\section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
+% \section{Summary}
+% This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
 
 
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
+% %----------------------------------------------------------------------------------------
+% %	EDUCATION
+% %----------------------------------------------------------------------------------------
+% \section{Education}
+% \begin{tabularx}{\linewidth}{@{}l X@{}}	
+% Dec 2020 - May 2024 & Indian Institute of Inforamtion Technology, Kurnool $|$ Bachelor of Technology \hfill \normalsize (GPA: 8.17/10) \\
 
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
+% Dec 2020 - May 2024 & Indian Institute of Inforamtion Technology, Kurnool $|$ Bachelor of Technology \hfill \normalsize (GPA: 8.17/10) \\
+% \end{tabularx}
+
+
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
+\vspace{-5pt}
 \begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
+December 2020 - May 2024 & IIIT Kurnool $|$ Bachelor of Technology in Computer Science \& Engineering \hfill \normalsize (GPA: 8.17/10) \\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+
+%Experience
+\section{Experience}
+\vspace{-5pt}
+\begin{joblong}{Recruit CRM $|$ Trainee Software Engineer}{March 2024 - Present}
+\item Led the revamp of candidates module and migration of tech stack to Java, Spring Boot and Microservices architecture.
+\item Collaborated on the design (HLD and LLD) and implementation of endpoints, ensuring robust functionality within the
+new architecture.
+\item Wrote unit tests for the new endpoints using JUnit and Mockito, ensuring 100\% code coverage.
+\item Exposure: Java, Spring Boot, Git, AWS, JUnit, Mockito, RESTful APIs, Agile, Confluence, JIRA, CI/CD
+\end{joblong}
+
+\begin{joblong}{Samsung - Research Intern}{January 2023 - March 2023}
+\item long long line of blah blah that will wrap when the table fills the column width
+\item again, long long line of blah blah that will wrap when the table fills the column width but this time even time 
+\end{joblong}
+
+\vspace{-4pt}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
+\vspace{-5pt}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Langauges &  \normalsize{C++, Java, Golang, SQL}\\
+Web Development & \normalsize{HTML, CSS, JavaScript}\\
+Frameworks &  \normalsize{Vue.js, Laravel, Spring Boot, Spring Data JPA, Hiberate}\\
+Other & \normalsize{MySQL, MongoDB, Redis, Git, Docker, Jenkins}\\
+Courses & Data Structure, Algorithsm, Object Oriented Programming (OOPS), DBMS, Operating Systems
 \end{tabularx}
 
-\vfill
-\center{\footnotesize Last updated: \today}
+
+%----------------------------------------------------------------------------------------
+  
+\section{Projects}
+\vspace{-5pt}
+\begin{joblong}{Some Project}{GitHub}
+    \item This
+    \item jkafj
+\end{joblong}
+
+\begin{joblong}{Some Project}{GitHub}
+    \item This
+    \item djd
+\end{joblong}
+
+\begin{joblong}{Some Project}{GitHub}
+    \item This
+    \item jj
+\end{joblong}
+
+% %Projects
+% \section{Projects}
+
+% \begin{tabularx}{\linewidth}{ @{}l r@{} }
+% \textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
+% \multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
+% \end{tabularx}
+
+
+% %----------------------------------------------------------------------------------------
+% %	PUBLICATIONS
+% %----------------------------------------------------------------------------------------
+% \section{Publications}
+% \begin{refsection}[citations.bib]
+% \nocite{*}
+% \printbibliography[heading=none]
+% \end{refsection}
+
+
+
+\section{Achievements}
+\vspace{-5pt}
+\begin{itemize}
+    \setlength\itemsep{-3pt} 
+    \item Ranked 5577 and 3532 globally in Meta Hacker Cup 2023 Rounds 1 and 2. Certificate
+    \item Secured a global rank of 4614 out of 10K+ participants in Google Kick Start 2022 Round F. Certificate
+    \item Achieved global rank 4011 out of 28991 participants in Scalar CodeX 2.0 coding contest. Certificate
+    \item 
+\end{itemize}
+
+
+%Experience
+\section{Experience}
+\vspace{-5pt}
+\begin{joblong}{DoSelect $|$ Problem Setter $|$ Remote}{January 2024 - Present}
+\item Led the revamp of candidates module and migration of tech stack to Java, Spring Boot and Microservices architecture.
+\item Collaborated on the design (HLD and LLD) and implementation of endpoints, ensuring robust functionality within the
+new architecture.
+\end{joblong}
+
+\begin{joblong}{Samsung - Research Intern}{January 2023 - March 2023}
+\item long long line of blah blah that will wrap when the table fills the column width
+\item 
+\end{joblong}
 
 \end{document}
