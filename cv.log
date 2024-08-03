@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.25)  19 JUL 2024 18:47
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.5.25)  3 AUG 2024 15:01
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -662,17 +662,22 @@ Package hyperref Info: Link coloring ON on input line 127.
 \openout4 = `cv.out'.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 163--169
+Underfull \hbox (badness 10000) in paragraph at lines 163--166
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 167--173
 
  []
 
 (/usr/local/texlive/2024/texmf-dist/tex/latex/fontawesome5/ufontawesomebrands0.fd)
-Underfull \hbox (badness 10000) in paragraph at lines 241--246
+Underfull \hbox (badness 10000) in paragraph at lines 245--250
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 247--252
+Underfull \hbox (badness 10000) in paragraph at lines 251--256
 
  []
 
@@ -698,10 +703,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  66i,9n,81p,1216b,803s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2024/texmf-dist/fonts/type1/public/fontawesome5/FontAwesome5Brands-Regular.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmbxti10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmcsc10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2024/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on cv.pdf (1 page, 115562 bytes).
+Output written on cv.pdf (1 page, 115387 bytes).
 PDF statistics:
- 102 PDF objects out of 1000 (max. 8388607)
- 73 compressed objects within 1 object stream
+ 100 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  8 named destinations out of 1000 (max. 500000)
  49 words of extra memory for PDF output out of 10000 (max. 10000000)
 
