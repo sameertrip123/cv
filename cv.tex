@@ -26,7 +26,7 @@
 %----------------------------------------------------------------------------------------
 
 % article class because we want to fully customize the page and not use a cv template
-\documentclass[a4paper,12pt]{article}
+\documentclass[a4paper,10pt]{article}
 
 %----------------------------------------------------------------------------------------
 %	FONT
@@ -54,7 +54,8 @@
 \RequirePackage{color}
 \RequirePackage{graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
-\usepackage[scale=0.9]{geometry}
+
+\usepackage[top=0.95cm, bottom=0.2cm, left=1cm, right=1cm]{geometry}
 
 %tabularx environment
 \usepackage{tabularx}
@@ -62,7 +63,7 @@
 %for lists within experience section
 \usepackage{enumitem}
 
-% centered version of 'X' col. type
+% centered version of 'X' col. types
 \newcolumntype{C}{>{\centering\arraybackslash}X} 
 
 %to prevent spillover of tabular into next pages
@@ -91,30 +92,27 @@
 \addbibresource{citations.bib}
 \setlength\bibitemsep{1em}
 
+
 %for social icons
 \usepackage{fontawesome5}
 
-%debug page outer frames
-%\usepackage{showframe}
-
-
 % job listing environments
-\newenvironment{jobshort}[2]
+\newenvironment{jobshort}[3]
     {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \textbf{#1} & \textit{#2} &  #3 \\[3pt]
     \end{tabularx}
     }
     {
     }
 
-\newenvironment{joblong}[2]
+\newenvironment{joblong}[3]
     {
     \begin{tabularx}{\linewidth}{@{}l X r@{}}
-    \textbf{#1} & \hfill &  #2 \\[3.75pt]
+    \textbf{#1} & \textit{#2} &  #3 \\[3pt]
     \end{tabularx}
     \begin{minipage}[t]{\linewidth}
-    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt,label=--]
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt,label=--]
     }
     {
     \end{itemize}
@@ -135,83 +133,125 @@
 %	TITLE
 %----------------------------------------------------------------------------------------
 
-% \begin{tabularx}{\linewidth}{ @{}X X@{} }
-% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
-% \raisebox{-0.05\height}\faGithub\ username \ | \
-% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
-% \end{tabularx}
-
 \begin{tabularx}{\linewidth}{@{} C @{}}
-\Huge{Your Name} \\[7.5pt]
-\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ username} \ $|$ \ 
-\href{https://linkedin.com/in/username}{\raisebox{-0.05\height}\faLinkedin\ username} \ $|$ \ 
-\href{https://mysite.com}{\raisebox{-0.05\height}\faGlobe \ mysite.com} \ $|$ \ 
-\href{mailto:email@mysite.com}{\raisebox{-0.05\height}\faEnvelope \ email@mysite.com} \ $|$ \ 
-\href{tel:+000000000000}{\raisebox{-0.05\height}\faMobile \ +00.00.000.000} \\
+\Huge{Sameer Tripathi} \\[8pt]
+\href{tel:+919151426933}{\ +91 9151426933} \ $|$ \
+\href{mailto:sameertrip123@gmail.com}{\ sameertrip123@gmail.com} \ $|$ \
+\href{https://linkedin.com/in/sameertri039}{\ LinkedIn} \ $|$ \ 
+\href{https://github.com/sameertrip123}{\ GitHub} \ $|$ \ 
+\href{https://sameertrip123.github.io/portfolio/}{\ Portfolio}  \ $|$ \ 
+\href{https://leetcode.com/u/sameertri039/}{\ LeetCode} \\
+% \href{https://www.geeksforgeeks.org/user/sameertri039/}{\ GeeksforGeeks}  \\
 \end{tabularx}
 
-%----------------------------------------------------------------------------------------
-% EXPERIENCE SECTIONS
-%----------------------------------------------------------------------------------------
-
-%Interests/ Keywords/ Summary
-\section{Summary}
-This CV is automatically generated and deployed using the \href{https://github.com/jitinnair1/autoCV}{autoCV} template along with GitHub Actions such that a new version of the CV is compiled, published and ready for use when the cv.tex file is updated. For details, \href{https://github.com/jitinnair1/autoCV}{click here}.
-
-%Experience
-\section{Work Experience}
-
-\begin{jobshort}{Designation}{Jan 2021 - present}
-long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width
-\end{jobshort}
-
-
-\begin{joblong}{Designation}{Mar 2019 - Jan 2021}
-\item long long line of blah blah that will wrap when the table fills the column width
-\item again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah. again, long long line of blah blah that will wrap when the table fills the column width but this time even more long long line of blah blah
-\end{joblong}
-  
-%Projects
-\section{Projects}
-
-\begin{tabularx}{\linewidth}{ @{}l r@{} }
-\textbf{Some Project} & \hfill \href{https://some-link.com}{Link to Demo} \\[3.75pt]
-\multicolumn{2}{@{}X@{}}{long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width long long line of blah blah that will wrap when the table fills the column width}  \\
-\end{tabularx}
 
 %----------------------------------------------------------------------------------------
 %	EDUCATION
 %----------------------------------------------------------------------------------------
 \section{Education}
-\begin{tabularx}{\linewidth}{@{}l X@{}}	
-2030 - present & PhD (Subject) at \textbf{University} \hfill \normalsize (GPA: 4.0/4.0) \\
-
-2023 - 2027 & Bachelor's Degree at \textbf{College} \hfill (GPA: 4.0/4.0) \\ 
-
-2022 & Class 12th Some Board \hfill  (Grades) \\
-
-2021 & Class 10th Some Board \hfill  (Grades) \\
-\end{tabularx}
+\vspace{-4pt}
+\begin{joblong}{Indian Institure of Information Technology (IIIT Kurnool)}{B. Tech in Computer Science}{Dec 2020 - May 2024}
+    \item Courses: Data Structures, Algorithms, Object Oriented Programming, DBMS, Operating Systems, Distributed System
+\end{joblong}
+\vspace{-16pt}
 
 %----------------------------------------------------------------------------------------
-%	PUBLICATIONS
+% EXPERIENCE SECTIONS
 %----------------------------------------------------------------------------------------
-\section{Publications}
-\begin{refsection}[citations.bib]
-\nocite{*}
-\printbibliography[heading=none]
-\end{refsection}
+\section{Experience}
+\vspace{-4pt}
+\begin{joblong}{1Bee.ai}{Software Engineer - Backend}{Aug 2024 - Present}
+    \item Contributed to the development and implementation of AI-driven outbound sales solutions at 1bee, enhancing automation and efficiency in lead generation and customer engagement.
+\end{joblong}
+
+\begin{joblong}{Recruit CRM}{Software Engineer Intern}{Oct 2023 - July 2024}
+    \item Revamped the candidates module, migrating the tech stack from PHP to Java, Spring Boot, Microservices and SOA, yielding a performance boost of 29.73\%.
+    \item Conducted POCs for 14 different existing endpoints, contributed to high-level and low-level design, developed new endpoints, and documented the entire process on Confluence.
+    \item Wrote unit tests for the new endpoints using JUnit and Mockito, ensuring 100\% code coverage.
+    \item Exposure: Java, Spring Boot, MySQL, AWS(EC2, S3), JUnit, Mockito, JIRA, Confluence, CI/CD, Sonar, Agile, Scrum
+\end{joblong}
+
+% \begin{joblong}{DoSelect - {\footnotesize \textit{\textbf{(Naukri.com)}}}}{Problem Setter}{Jan 2024 - Present}
+%     \item Collaborated with 7 other team members to create coding problems for hiring assessments and online tests.
+%     \item Improved problem clarity for 20+ problems, added test cases and code stubs for new problems, wrote editorials for
+%     problems and their solutions for thorough explanation.
+% \end{joblong}
+
+% \begin{joblong}{Outscal}{Intern - C++}{Aug 2023 - Present}
+%     \item Reviewed C++, Data Structures, Object-Oriented Programming (OOPS) assignments within 24-hour, addressing
+%     queries promptly and ensuring the satisfaction of over 20+ students.
+%     \item Conducted code reviews, provided actionable feedback that accelerated student’s progress by 10\% within 2 months.
+% \end{joblong}
+
+\begin{joblong}{Samsung R\&D}{Prism Research Intern}{Jan 2023 - Mar 2023}
+    \item Developed a cutting-edge IoT service that intelligently selects the optimal access point from the surrounding, enhancing speed and data throughput by 12.36\%.
+    \item Leveraged QoS parameters to achieve sub-300 millisecond latency, enhancing overall user experience.
+\end{joblong}
+\vspace{-5pt}
 
 %----------------------------------------------------------------------------------------
 %	SKILLS
 %----------------------------------------------------------------------------------------
 \section{Skills}
+\vspace{-4pt}
 \begin{tabularx}{\linewidth}{@{}l X@{}}
-Some Skills &  \normalsize{This, That, Some of this and that etc.}\\
-Some More Skills  &  \normalsize{Also some more of this, Some more that, And some of this and that etc.}\\  
+Langauges &  \normalsize{C, C++, Java, Golang, SQL}\\
+Web Development & \normalsize{HTML, CSS, JavaScript, TypeScript Vue.js, Vitest, Tailwind CSS}\\
+Frameworks &  \normalsize{Spring Boot, Spring Data JPA, Spring Security, Hiberate}\\
+Database & \normalsize{MySQL, MongoDB, Redis, CI/CD, JUnit, Mockito, Maven, SonarQube}\\
+Familiar With & \normalsize{AWS (S3, EC2, Aurora, Code Artifact), Jenkins, Docker}\\
+Developer Tools & \normalsize{Git, JIRA, Confluence, Postman, VS Code, IntelliJ IDEA}\\
 \end{tabularx}
 
-\vfill
-\center{\footnotesize Last updated: \today}
+
+
+%----------------------------------------------------------------------------------------
+  
+\section{Projects}
+\vspace{-4pt}
+\begin{jobshort}{Task Scheduler}{PHP, Laravel, Vue.js, MySQL, Tailwind CSS}{\href{https://github.com/sagnik6969/task_scheduler_frontend}{\raisebox{-0.05\height}\faGithub\ GitHub}}
+    A task scheduler application for managers to create, organize, and monitor tasks. Implemented email verification and
+notifications for timely updates.
+\end{jobshort}
+
+\begin{jobshort}{Distributed Cache}{Golang}{}
+    Implemented a distributed cache system for efficient data storage and retrieval across network nodes.
+\end{jobshort}
+
+% \begin{jobshort}{File Hider}{Java, JDBC, SMTP}{}
+%     An application that allows users to hide and unhide their files in a secure wallet. Added 2 factor authentication using OTP
+%     on their registered mail.
+% \end{jobshort}
+
+% \begin{jobshort}{URL Shortener}{Golang, Redis, Fiber}{\href{https://github.com/sameertrip123/url-shortener}{\raisebox{-0.05\height}\faGithub\ GitHub}}
+%     A high performant URL shortener that converts long URLs to a short URL. Utilized Redis for URL mapping. Simplified
+%     URL validation and integrated rate limiting to prevent abuse by malicious users.
+% \end{jobshort}
+
+
+
+\section{Achievements}
+\vspace{-4pt}
+\begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=2pt,label=--]
+    \item Ranked 5577 and 3532 globally in Meta Hacker Cup 2023 Rounds 1 and 2. \href{https://www.facebook.com/codingcompetitions/hacker-cup/2023/certificate/2037824066570201}{Certificate}
+    \item Secured a global rank of 4614 out of 10K+ participants in Google Kick Start 2022 Round F. \href{https://drive.google.com/file/d/1yJX57VkI7LnC7MsX_Wz_063uCRgkH8W3/view}{Certificate}
+    \item Achieved global rank 4011 out of 28991 participants in Scalar CodeX 2.0 coding contest. \href{https://moonshot.scaler.com/s/sl/p3M5EL9en3}{Certificate}
+    \item Secured global rank 3109 out of 20K+ participants in LeetCode Weekly Contest 320. \href{https://leetcode.com/u/sameertri039/}{Profile}
+\end{itemize}
+
+
+\section{Freelancing}
+\vspace{-4pt}
+\begin{joblong}{DoSelect - {\footnotesize \textit{\textbf{(Naukri.com)}}}}{Problem Setter}{Jan 2024 - Present}
+    \item Collaborated with 7 other team members to create coding problems for hiring assessments and online tests.
+    \item Improved problem clarity for 20+ problems, added test cases and code stubs for new problems, wrote editorials for
+    problems and their solutions for thorough explanation.
+\end{joblong}
+
+\begin{joblong}{Outscal}{Intern - C++}{Aug 2023 - Present}
+    \item Reviewed C++, Data Structures, Object-Oriented Programming (OOPS) assignments within 24-hour, addressing
+    queries promptly and ensuring the satisfaction of over 20+ students.
+    \item Conducted code reviews, provided actionable feedback that accelerated student’s progress by 10\% within 2 months.
+\end{joblong}
 
 \end{document}
